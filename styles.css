@@ -363,3 +363,66 @@ footer { color: #c1ced7; background: var(--navy-dark); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+
+.app-window-image {
+  margin-left: -10px;
+  padding: 20px 20px 16px;
+  background: #ffffff;
+  border: 1px solid #bdc9d2;
+  box-shadow: var(--shadow);
+  transform: perspective(1600px) rotateY(-2deg);
+  transform-origin: center left;
+}
+
+.app-window-image::after {
+  content: "LIVE PRODUCT PREVIEW";
+}
+
+.app-window-image > img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #dde4ea;
+}
+
+.app-window-image figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 14px;
+}
+
+.app-window-image figcaption span {
+  color: var(--navy);
+  font-size: .78rem;
+  font-weight: 900;
+}
+
+.app-window-image figcaption small {
+  color: #6f7f8c;
+  font-size: .66rem;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .app-window-image {
+    transform: none;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-window-image {
+    padding: 10px 10px 12px;
+  }
+
+  .app-window-image figcaption {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-window-image figcaption small {
+    text-align: left;
+  }
+}
