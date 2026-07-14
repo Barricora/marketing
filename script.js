@@ -18,99 +18,204 @@ const modules = {
   audits: {
     number: '01 / 05',
     title: 'Focused safety audits',
-    description: 'Start a task-specific audit, answer one question at a time, attach evidence and create actions where improvement is required.',
+    description: 'Start a task-specific audit from the same layout your team already sees in Barricora, with the real card style and module structure from the app.',
     list: [
-      'Question-by-question mobile workflow',
-      'Five real scoring choices including N/A',
-      'Save & Exit, resume and read-only finished audits',
-      'Auditor and supervisor signatures',
-      'Final PDF report'
+      'Start New Audit layout styled like the live app',
+      'Real task categories with question counts',
+      'Same left navigation structure as Barricora',
+      'Clear card-based selection for site activities',
+      'Designed to feel familiar from first click'
     ],
     ui: `
-      <div class="ui-head"><div><small>Focused Audits</small><strong>Choose audit type</strong></div><button type="button">Saved Audits</button></div>
-      <div class="audit-type-grid">
-        <span><b>⇧</b>Work at Height</span><span><b>▣</b>MEWP</span><span><b>↔</b>Manual Handling</span>
-        <span><b>⌁</b>Lifting</span><span><b>⚡</b>Battery Tools</span><span><b>ϟ</b>Electricity</span>
-        <span><b>◉</b>Noise</span><span><b>♨</b>Hot Work</span><span><b>⬡</b>Confined Space</span>
-        <span><b>⌄</b>Excavation / Groundwork</span><span><b>◫</b>Plant / Telehandler</span>
+      <div class="app-shot">
+        <aside class="app-shot-sidebar">
+          <div class="app-shot-brand">
+            <img src="assets/barricora-mark.png" alt="" />
+            <div><strong>Barricora</strong><span>Safety management portal</span></div>
+          </div>
+          <button>Dashboard</button>
+          <button class="active">Audits</button>
+          <button>Daily Checklists</button>
+          <button>Toolbox Talks</button>
+          <button>RAMS</button>
+          <button>Actions</button>
+          <button>Findings</button>
+          <button>Workers</button>
+          <button>PPE Stock</button>
+          <button>Settings</button>
+        </aside>
+        <div class="app-shot-main">
+          <div class="app-shot-topline"><h4>Start New Audit</h4></div>
+          <div class="audit-card-grid">
+            <article class="audit-card"><div class="audit-icon">🧪</div><div><strong>Test</strong><small>2 questions</small></div><b>›</b></article>
+            <article class="audit-card"><div class="audit-icon safety">🛡️</div><div><strong>General Safety Audit</strong><small>28 questions</small></div><b>›</b></article>
+            <article class="audit-card"><div class="audit-icon">🏗️</div><div><strong>Work at Height</strong><small>16 questions</small></div><b>›</b></article>
+            <article class="audit-card"><div class="audit-icon box">📦</div><div><strong>Manual Handling</strong><small>14 questions</small></div><b>›</b></article>
+            <article class="audit-card"><div class="audit-icon dark">🏗</div><div><strong>Lifting Operations</strong><small>16 questions</small></div><b>›</b></article>
+            <article class="audit-card"><div class="audit-icon vehicle">🚜</div><div><strong>Plant & Vehicle Interface</strong><small>14 questions</small></div><b>›</b></article>
+            <article class="audit-card"><div class="audit-icon tool">🛠️</div><div><strong>Tools & Equipment</strong><small>15 questions</small></div><b>›</b></article>
+            <article class="audit-card"><div class="audit-icon clean">🧹</div><div><strong>Housekeeping & Access</strong><small>14 questions</small></div><b>›</b></article>
+          </div>
+        </div>
       </div>`
   },
   findings: {
     number: '02 / 05',
     title: 'Findings and corrective actions',
-    description: 'Raise a finding independently or create an action from a poor audit score. The issue, owner, deadline and close-out evidence remain connected.',
+    description: 'Findings and actions now follow the same practical Barricora look — simple status visibility, strong ownership and easy close-out tracking.',
     list: [
-      'Description and multiple photos',
-      'Owner and due date',
-      'Open, In Progress and Closed status',
-      'Close-out note, photo and updated rating',
-      'Completed action appended to the audit report'
+      'Open, In Progress and Closed status handling',
+      'Finding title, owner and due date in one row',
+      'Action close-out linked back to the issue',
+      'Simple card view instead of buried admin screens',
+      'Made to stay usable on real projects'
     ],
     ui: `
-      <div class="ui-head"><div><small>Findings</small><strong>Open / In Progress / Closed</strong></div><button type="button">+ Raise Finding</button></div>
-      <div class="finding-list">
-        <div class="finding-row"><b>OPEN</b><div><strong>Finding title</strong><small>Description, photos, owner and due date</small></div><span>Update</span></div>
-        <div class="finding-row"><b>IN PROGRESS</b><div><strong>Corrective action</strong><small>Close-out evidence can be added before completion</small></div><span>Add evidence</span></div>
-        <div class="finding-row"><b>CLOSED</b><div><strong>Verified close-out</strong><small>Completion note, photo and final rating stored</small></div><span>View record</span></div>
+      <div class="app-shot">
+        <aside class="app-shot-sidebar compact-nav">
+          <div class="app-shot-brand small">
+            <img src="assets/barricora-mark.png" alt="" />
+            <div><strong>Barricora</strong><span>Safety management portal</span></div>
+          </div>
+          <button>Dashboard</button>
+          <button>Audits</button>
+          <button class="active">Actions</button>
+          <button class="active secondary">Findings</button>
+          <button>Workers</button>
+          <button>PPE Stock</button>
+        </aside>
+        <div class="app-shot-main">
+          <div class="app-shot-topline split"><h4>Action / Issue List</h4><span class="shot-button">Raise Finding</span></div>
+          <div class="list-card finding-card">
+            <div class="finding-status open">OPEN</div>
+            <div><strong>Missing edge protection on work area</strong><small>Owner: Supervisor • Due: Today • 3 photos attached</small></div>
+            <span>Update</span>
+          </div>
+          <div class="list-card finding-card">
+            <div class="finding-status progress">IN PROGRESS</div>
+            <div><strong>Tool lanyards to be issued before shift</strong><small>Owner: Site Lead • Due: Tomorrow • Close-out pending</small></div>
+            <span>Add evidence</span>
+          </div>
+          <div class="list-card finding-card">
+            <div class="finding-status closed">CLOSED</div>
+            <div><strong>Access route housekeeping completed</strong><small>Closed with photo evidence and updated rating</small></div>
+            <span>View record</span>
+          </div>
+        </div>
       </div>`
   },
   daily: {
     number: '03 / 05',
     title: 'Daily checks and toolbox talks',
-    description: 'Keep the small, frequent safety records in the same workspace rather than splitting them across paper sheets and separate files.',
+    description: 'The same app style is used for the smaller everyday records, so daily controls and toolbox talks feel like part of one system instead of a separate add-on.',
     list: [
-      'Simple daily PPE, harness and SPA checks',
-      'Project and date header',
-      'Toolbox talk record',
-      'Dashboard KPI connection',
-      'Mobile-friendly entry'
+      'Daily checklist cards styled like the app',
+      'Simple yes / no style project checks',
+      'Toolbox talk records in the same workspace',
+      'Fast entry for frequent site tasks',
+      'Keeps dashboard counts connected'
     ],
     ui: `
-      <div class="ui-head"><div><small>Daily Records</small><strong>Today’s site controls</strong></div><button type="button">New record</button></div>
-      <div class="daily-grid">
-        <article class="daily-card"><span>DAILY CHECKLIST</span><h4>Core checks</h4><div><span>PPE compliant</span><b>✓</b></div><div><span>Harness checks complete</span><b>✓</b></div><div><span>SPA available</span><b>✓</b></div></article>
-        <article class="daily-card"><span>TOOLBOX TALKS</span><h4>Project record</h4><div><span>Topic</span><b>Recorded</b></div><div><span>Attendance</span><b>Recorded</b></div><div><span>Dashboard count</span><b>Updated</b></div></article>
+      <div class="app-shot">
+        <aside class="app-shot-sidebar compact-nav">
+          <div class="app-shot-brand small">
+            <img src="assets/barricora-mark.png" alt="" />
+            <div><strong>Barricora</strong><span>Safety management portal</span></div>
+          </div>
+          <button>Dashboard</button>
+          <button class="active">Daily Checklists</button>
+          <button class="active secondary">Toolbox Talks</button>
+          <button>Audits</button>
+          <button>Findings</button>
+        </aside>
+        <div class="app-shot-main">
+          <div class="app-shot-topline"><h4>Daily controls</h4></div>
+          <div class="daily-shell-grid">
+            <article class="daily-shell-card">
+              <small>DAILY CHECKLIST</small>
+              <strong>Morning site check</strong>
+              <div><span>PPE complete</span><b>✓</b></div>
+              <div><span>Harness inspected</span><b>✓</b></div>
+              <div><span>SPA reviewed</span><b>✓</b></div>
+            </article>
+            <article class="daily-shell-card">
+              <small>TOOLBOX TALK</small>
+              <strong>Battery tools briefing</strong>
+              <div><span>Topic recorded</span><b>✓</b></div>
+              <div><span>Attendance captured</span><b>15</b></div>
+              <div><span>Dashboard updated</span><b>✓</b></div>
+            </article>
+          </div>
+        </div>
       </div>`
   },
   records: {
     number: '04 / 05',
     title: 'Workers, PPE and RAMS',
-    description: 'Barricora now includes the supporting project records needed around the audit workflow, using the same company workspace and navigation.',
+    description: 'Support records should not look disconnected from the rest of the product, so the records section now follows the same Barricora panel design.',
     list: [
-      'Worker list management',
-      'PPE issue and stock records',
-      'RAMS records',
-      'Photo storage connected to records',
-      'Company-level access control'
+      'Workers, PPE and RAMS in one familiar layout',
+      'Simple project record cards for quick navigation',
+      'Keeps admin tools inside the same workspace',
+      'Clear visual grouping by record type',
+      'Built around how the app already feels'
     ],
     ui: `
-      <div class="ui-head"><div><small>Project Records</small><strong>Connected administration</strong></div><button type="button">Manage</button></div>
-      <div class="record-list">
-        <article><span>W</span><h4>Workers</h4><p>Add, edit and maintain the project worker list.</p></article>
-        <article><span>P</span><h4>PPE</h4><p>Track issued PPE and stock inside the web app.</p></article>
-        <article><span>R</span><h4>RAMS</h4><p>Keep project RAMS records accessible from the main menu.</p></article>
-        <article><span>▣</span><h4>Photos</h4><p>Evidence remains attached to the audit, finding or close-out.</p></article>
+      <div class="app-shot">
+        <aside class="app-shot-sidebar compact-nav">
+          <div class="app-shot-brand small">
+            <img src="assets/barricora-mark.png" alt="" />
+            <div><strong>Barricora</strong><span>Safety management portal</span></div>
+          </div>
+          <button>Dashboard</button>
+          <button class="active">Workers</button>
+          <button class="active secondary">PPE Stock</button>
+          <button class="active secondary">RAMS</button>
+          <button>Settings</button>
+        </aside>
+        <div class="app-shot-main">
+          <div class="app-shot-topline"><h4>Project records</h4></div>
+          <div class="record-shell-grid">
+            <article><span>👷</span><strong>Workers</strong><small>Maintain project worker details and access-related records.</small></article>
+            <article><span>🦺</span><strong>PPE Stock</strong><small>Track stock levels, issue records and items needing restock.</small></article>
+            <article><span>📄</span><strong>RAMS</strong><small>Keep RAMS records visible from the same left menu structure.</small></article>
+            <article><span>🖼️</span><strong>Evidence</strong><small>Photos remain linked back to audits, findings and close-outs.</small></article>
+          </div>
+        </div>
       </div>`
   },
   admin: {
     number: '05 / 05',
     title: 'Admin, support access and App Log',
-    description: 'Company administration is separated from normal site work, with searchable activity history and controlled support access.',
+    description: 'The admin section now reads much more like the live app too, with a cleaner searchable App Log style and the same soft panel treatment.',
     list: [
-      'Company user management',
-      'Password reset flow',
-      'Support access controls',
-      'Searchable App Log',
-      'Filters by section and activity type'
+      'Searchable App Log view',
+      'Section and activity filters',
+      'Support access and admin activity visibility',
+      'Clear row-based record history',
+      'Feels like the same Barricora workspace'
     ],
     ui: `
-      <div class="ui-head"><div><small>App Log</small><strong>Search and filter activity</strong></div><button type="button">Clear filters</button></div>
-      <div class="admin-log">
-        <div class="log-toolbar"><span>Search App Log</span><span>All sections</span><span>All activity</span></div>
-        <div class="log-entry"><b>Workers</b><span>Updated</span><p>A worker record was edited.</p></div>
-        <div class="log-entry"><b>PPE</b><span>Deleted</span><p>A PPE record was removed.</p></div>
-        <div class="log-entry"><b>Support Access</b><span>Changed</span><p>Support access settings were updated.</p></div>
-        <div class="log-entry"><b>Audits</b><span>Completed</span><p>A finished audit report was saved.</p></div>
+      <div class="app-shot">
+        <aside class="app-shot-sidebar compact-nav">
+          <div class="app-shot-brand small">
+            <img src="assets/barricora-mark.png" alt="" />
+            <div><strong>Barricora</strong><span>Safety management portal</span></div>
+          </div>
+          <button>Dashboard</button>
+          <button class="active">Settings</button>
+          <button class="active secondary">App Log</button>
+          <button>Workers</button>
+          <button>PPE Stock</button>
+        </aside>
+        <div class="app-shot-main">
+          <div class="app-shot-topline split"><h4>App Log</h4><span class="shot-button pale">Search & Filter</span></div>
+          <div class="log-filter-row"><span>Search App Log</span><span>All sections</span><span>All activity</span></div>
+          <div class="log-shell-row"><b>Workers</b><span>Updated</span><p>Worker information was edited by a company admin.</p></div>
+          <div class="log-shell-row"><b>PPE</b><span>Deleted</span><p>A PPE stock item was removed from the project list.</p></div>
+          <div class="log-shell-row"><b>Support Access</b><span>Changed</span><p>Support permissions were updated for the workspace.</p></div>
+          <div class="log-shell-row"><b>Audits</b><span>Completed</span><p>A finished audit report was saved and logged.</p></div>
+        </div>
       </div>`
   }
 };
@@ -138,6 +243,8 @@ function selectModule(key) {
 }
 
 tabs.forEach((tab) => tab.addEventListener('click', () => selectModule(tab.dataset.module)));
+
+selectModule('audits');
 
 const demoForm = document.getElementById('demo-form');
 const formMessage = document.getElementById('form-message');
