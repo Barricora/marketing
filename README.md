@@ -1,19 +1,23 @@
-# Barricora Marketing Website
+# Barricora Marketing Website V3
 
-Static responsive marketing website for Barricora.
+This version uses the exact uploaded Barricora logo and only established Barricora app modules and workflows.
 
 ## Files
-- `index.html` — page structure and SEO content
-- `styles.css` — responsive styling
-- `script.js` — navigation, scroll effects, pricing toggle and demo form placeholder
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/barricora-logo.png` — cropped from the exact uploaded logo
+- `assets/barricora-mark.png` — exact crop of the logo mark for favicon use
 
-## Recommended domain setup
-- `barricora.com` and `www.barricora.com` — marketing website
+## Deployment
+Use a separate GitHub repository and a separate Cloudflare Pages project for the public website.
+
+Recommended domains:
+- `barricora.com` — public website
 - `app.barricora.com` — Barricora application
 
-## Before production launch
-1. Connect the demo form to email/API.
-2. Confirm subscription prices and plan limits.
-3. Replace privacy and terms placeholders with real pages.
-4. Verify the final app login URL.
-5. Add analytics and cookie/privacy controls if required.
+## Demo form
+The form opens a pre-filled email to `hello@barricora.com`. It does not yet use a backend form service.
+
+## Pricing
+No invented prices or user limits are published. The plans section is deliberately marked as draft until the commercial offer is confirmed.

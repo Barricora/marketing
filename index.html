@@ -3,333 +3,279 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Barricora — Safety Audits, Actions & Reports in One Place</title>
-  <meta name="description" content="Barricora helps construction teams complete safety audits, assign corrective actions, capture evidence and generate professional reports from any device." />
-  <meta name="theme-color" content="#102b3f" />
-  <meta property="og:title" content="Barricora — Smarter Safety Audits" />
-  <meta property="og:description" content="Mobile-first safety audits, findings, corrective actions and professional reports." />
+  <title>Barricora | Construction Safety Management</title>
+  <meta name="description" content="Barricora connects construction safety audits, findings, corrective actions, daily checks, toolbox talks, workers, PPE, RAMS and reports in one practical web app." />
+  <meta name="theme-color" content="#082f55" />
+  <meta property="og:title" content="Barricora | Construction Safety Management" />
+  <meta property="og:description" content="Focused audits, evidence, actions and site records in one practical system." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://barricora.com/" />
-  <link rel="canonical" href="https://barricora.com/" />
+  <meta property="og:image" content="assets/barricora-logo.png" />
+  <link rel="icon" href="assets/barricora-mark.png" />
   <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Barricora",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "description": "Mobile-first safety audit, findings, corrective action and reporting software for construction teams.",
-    "url": "https://barricora.com/"
-  }
-  </script>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Barricora home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" role="img"><path d="M20 3 34 9v10c0 9.2-5.7 14.9-14 18-8.3-3.1-14-8.8-14-18V9l14-6Z"/><path d="M14 13h8.5a5.5 5.5 0 0 1 0 11H14V13Zm0 11h9.8a5 5 0 0 1 0 10H14V24Z"/></svg>
-        </span>
-        <span>Barricora</span>
-      </a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Barricora home">
+        <img src="assets/barricora-logo.png" alt="Barricora" />
+      </a>
+      <button class="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
-
-      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-secondary nav-login" href="https://app.barricora.com/">Log in</a>
-        <a class="btn btn-primary" href="#contact">Request a demo</a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#product">Product</a>
+        <a href="#modules">Modules</a>
+        <a href="#workflow">Audit flow</a>
+        <a href="#plans">Plans</a>
+        <a class="nav-demo" href="#contact">Request demo</a>
+        <a class="nav-app" href="https://app.barricora.com/">Open app</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero section-pad">
-      <div class="hero-grid container">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span>Built for real construction sites</div>
-          <h1>Safety audits that move as fast as your site.</h1>
-          <p class="hero-lead">Complete focused audits, capture photo evidence, assign corrective actions and produce professional reports — all from one simple platform.</p>
+  <main id="main">
+    <section class="hero" id="product">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="overline"><span></span> Construction safety management</p>
+          <h1>One system.<br><strong>From the walk</strong><br>to the close-out.</h1>
+          <p class="hero-text">Barricora brings focused audits, findings, corrective actions, daily checks, toolbox talks and site records into the same practical workflow.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary btn-large" href="#contact">Request a demo</a>
-            <a class="btn btn-ghost btn-large" href="#product-preview">See the platform <span aria-hidden="true">→</span></a>
+            <a class="button primary" href="#contact">Request a demo</a>
+            <a class="button ghost" href="#modules">See the real modules</a>
           </div>
-          <div class="trust-row">
-            <div><strong>Mobile-first</strong><span>Use it directly on site</span></div>
-            <div><strong>Fast reporting</strong><span>PDF reports in seconds</span></div>
-            <div><strong>Clear ownership</strong><span>Actions never get lost</span></div>
+          <div class="hero-facts">
+            <span>Mobile-first web app</span>
+            <span>Photos &amp; voice input</span>
+            <span>PDF audit reports</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal" id="product-preview" aria-label="Barricora dashboard preview">
-          <div class="visual-glow"></div>
-          <div class="app-shell">
-            <div class="app-topbar">
-              <div class="mini-brand"><span class="mini-shield">B</span>Barricora</div>
-              <div class="avatar">MK</div>
-            </div>
-            <div class="app-body">
-              <aside class="app-sidebar">
-                <span class="side-active">Dashboard</span>
-                <span>Audits</span>
-                <span>Findings</span>
-                <span>Actions</span>
-                <span>Reports</span>
-              </aside>
-              <div class="app-content">
-                <div class="app-heading"><div><small>GVX25 Project</small><h3>Safety Dashboard</h3></div><button>+ New audit</button></div>
-                <div class="stat-grid">
-                  <div class="stat-card"><span>Open actions</span><strong>8</strong><small>3 due this week</small></div>
-                  <div class="stat-card"><span>Audits completed</span><strong>24</strong><small>+6 this month</small></div>
-                  <div class="stat-card"><span>Average score</span><strong>96%</strong><small>Well managed</small></div>
-                </div>
-                <div class="app-lower">
-                  <div class="audit-list">
-                    <div class="panel-title"><strong>Recent audits</strong><span>View all</span></div>
-                    <div class="audit-item"><span class="audit-icon">WAH</span><div><strong>Work at Height</strong><small>Today · Upper gallery</small></div><b class="score good">100%</b></div>
-                    <div class="audit-item"><span class="audit-icon">M</span><div><strong>MEWP Operations</strong><small>Yesterday · Zone 4</small></div><b class="score good">98%</b></div>
-                    <div class="audit-item"><span class="audit-icon">L</span><div><strong>Lifting Operations</strong><small>12 Jul · Delivery yard</small></div><b class="score warn">91%</b></div>
+        <div class="app-window" aria-label="Barricora application dashboard preview">
+          <div class="app-browserbar">
+            <div class="browser-dots"><i></i><i></i><i></i></div>
+            <span>app.barricora.com</span>
+            <b>Secure</b>
+          </div>
+          <div class="app-topbar">
+            <img src="assets/barricora-logo.png" alt="" />
+            <div class="app-user"><span>MK</span><small>Company Admin</small></div>
+          </div>
+          <div class="app-layout">
+            <aside class="app-sidebar">
+              <button class="active" type="button"><i>▦</i><span>Dashboard</span></button>
+              <button type="button"><i>✓</i><span>Audits</span></button>
+              <button type="button"><i>!</i><span>Findings</span></button>
+              <button type="button"><i>↗</i><span>Actions</span></button>
+              <button type="button"><i>☷</i><span>Daily Checklist</span></button>
+              <button type="button"><i>◫</i><span>Toolbox Talks</span></button>
+              <button type="button"><i>♙</i><span>Workers</span></button>
+              <button type="button"><i>◈</i><span>PPE</span></button>
+              <button type="button"><i>▤</i><span>RAMS</span></button>
+              <button type="button"><i>⌕</i><span>App Log</span></button>
+            </aside>
+            <div class="app-main">
+              <div class="app-heading">
+                <div><small>Project workspace</small><h2>Dashboard</h2></div>
+                <button type="button">+ New Audit</button>
+              </div>
+              <div class="kpi-grid">
+                <article><div class="kpi-icon blue">✓</div><span>Audits</span><strong>0</strong><small>Open audits</small></article>
+                <article><div class="kpi-icon orange">!</div><span>Findings</span><strong>0</strong><small>Open findings</small></article>
+                <article><div class="kpi-icon red">↗</div><span>Actions</span><strong>0</strong><small>Open actions</small></article>
+                <article><div class="kpi-icon steel">◫</div><span>Toolbox</span><strong>0</strong><small>Talks recorded</small></article>
+              </div>
+              <div class="dashboard-grid">
+                <section class="quick-panel">
+                  <div class="panel-head"><h3>Quick start</h3><small>Choose a task</small></div>
+                  <div class="quick-actions">
+                    <button type="button"><b>+</b><span>Start New Audit</span><small>Focused task audit</small></button>
+                    <button type="button"><b>!</b><span>Raise Finding</span><small>Record issue &amp; evidence</small></button>
+                    <button type="button"><b>✓</b><span>Daily Checklist</span><small>Complete daily checks</small></button>
                   </div>
-                  <div class="action-panel">
-                    <div class="panel-title"><strong>Action status</strong></div>
-                    <div class="donut"><div><strong>18</strong><span>Total</span></div></div>
-                    <div class="legend"><span><i class="open"></i>Open 8</span><span><i class="progress"></i>In progress 4</span><span><i class="closed"></i>Closed 6</span></div>
-                  </div>
-                </div>
+                </section>
+                <section class="status-panel">
+                  <div class="panel-head"><h3>Current status</h3><small>Live overview</small></div>
+                  <div class="status-row"><span>Open</span><b>0</b></div>
+                  <div class="status-row"><span>In Progress</span><b>0</b></div>
+                  <div class="status-row"><span>Closed</span><b>0</b></div>
+                  <div class="status-bar"><i></i><i></i><i></i></div>
+                </section>
               </div>
             </div>
           </div>
-          <div class="floating-card floating-one"><span class="check-dot">✓</span><div><strong>Audit completed</strong><small>PDF report generated</small></div></div>
-          <div class="floating-card floating-two"><span class="camera-dot">▣</span><div><strong>Evidence captured</strong><small>4 photos attached</small></div></div>
         </div>
+      </div>
+      <div class="hero-band">
+        <div><b>Audits</b><span>Task-specific questions and scoring</span></div>
+        <div><b>Evidence</b><span>Photos, notes, voice and signatures</span></div>
+        <div><b>Actions</b><span>Owner, due date and verified close-out</span></div>
+        <div><b>Records</b><span>Workers, PPE, RAMS and App Log</span></div>
       </div>
     </section>
 
-    <section class="logo-strip">
-      <div class="container logo-strip-inner">
-        <span>Designed for</span>
-        <strong>Construction</strong>
-        <strong>Data Centres</strong>
-        <strong>MEP Contractors</strong>
-        <strong>Safety Teams</strong>
-        <strong>Site Management</strong>
-      </div>
-    </section>
-
-    <section class="section-pad" id="features">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow"><span></span>Everything connected</div>
-          <h2>From site observation to verified close-out.</h2>
-          <p>Barricora replaces scattered forms, photos and spreadsheets with one clear workflow your team can actually use.</p>
+    <section class="modules-section" id="modules">
+      <div class="section-wrap">
+        <div class="section-intro">
+          <p class="overline"><span></span> The actual Barricora system</p>
+          <h2>No fictional dashboard.<br>These are the modules already in the app.</h2>
+          <p>Switch between the product areas below to see the workflow Barricora is built around.</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card feature-large reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            </div>
-            <h3>Focused safety audits</h3>
-            <p>Run task-specific audits for work at height, MEWP, lifting, plant, electrical work and more. Simple scoring keeps inspections quick and consistent.</p>
-            <div class="mini-ui checklist-ui">
-              <div><span>Exclusion zone in place</span><b>Well managed</b></div>
-              <div><span>Operator competency verified</span><b>Very well managed</b></div>
-              <div><span>Emergency plan reviewed</span><b class="na">N/A</b></div>
-            </div>
-          </article>
+        <div class="module-explorer">
+          <div class="module-tabs" role="tablist" aria-label="Barricora modules">
+            <button class="active" type="button" role="tab" aria-selected="true" data-module="audits">Audits</button>
+            <button type="button" role="tab" aria-selected="false" data-module="findings">Findings &amp; Actions</button>
+            <button type="button" role="tab" aria-selected="false" data-module="daily">Daily &amp; Toolbox</button>
+            <button type="button" role="tab" aria-selected="false" data-module="records">Workers, PPE &amp; RAMS</button>
+            <button type="button" role="tab" aria-selected="false" data-module="admin">Admin &amp; App Log</button>
+          </div>
 
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M4 7h16v13H4z"/><path d="m4 15 4-4 4 4 3-3 5 5"/><circle cx="15.5" cy="10" r="1.5"/></svg>
+          <div class="module-stage">
+            <div class="module-copy">
+              <p class="module-number" id="module-number">01 / 05</p>
+              <h3 id="module-title">Focused safety audits</h3>
+              <p id="module-description">Start a task-specific audit, answer one question at a time, attach evidence and create actions where improvement is required.</p>
+              <ul id="module-list">
+                <li>Question-by-question mobile workflow</li>
+                <li>Five real scoring choices including N/A</li>
+                <li>Save &amp; Exit, resume and read-only finished audits</li>
+                <li>Auditor and supervisor signatures</li>
+                <li>Final PDF report</li>
+              </ul>
             </div>
-            <h3>Photo evidence</h3>
-            <p>Attach multiple photos to individual questions, findings and completed corrective actions.</p>
-          </article>
 
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            </div>
-            <h3>Corrective actions</h3>
-            <p>Assign owners and due dates, track progress and require close-out evidence before completion.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h8"/></svg>
-            </div>
-            <h3>Professional PDF reports</h3>
-            <p>Create consistent client-ready reports with scores, notes, photos, signatures and action details.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
-            </div>
-            <h3>Live dashboards</h3>
-            <p>See audit scores, open findings, overdue actions and trends without rebuilding spreadsheets.</p>
-          </article>
-
-          <article class="feature-card feature-wide reveal">
-            <div class="feature-copy">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7v4l-2 3h18l-2-3V9a7 7 0 0 0-7-7Z"/><path d="M9 20h6"/></svg>
+            <div class="module-ui" id="module-ui" aria-live="polite">
+              <div class="ui-head"><div><small>Focused Audits</small><strong>Choose audit type</strong></div><button type="button">Saved Audits</button></div>
+              <div class="audit-type-grid">
+                <span><b>⇧</b>Work at Height</span><span><b>▣</b>MEWP</span><span><b>↔</b>Manual Handling</span>
+                <span><b>⌁</b>Lifting</span><span><b>⚡</b>Battery Tools</span><span><b>ϟ</b>Electricity</span>
+                <span><b>◉</b>Noise</span><span><b>♨</b>Hot Work</span><span><b>⬡</b>Confined Space</span>
+                <span><b>⌄</b>Excavation / Groundwork</span><span><b>◫</b>Plant / Telehandler</span>
               </div>
-              <h3>Built for site teams, not software experts</h3>
-              <p>Large buttons, clear language, voice input and mobile-friendly screens make Barricora practical in the field — even with gloves, noise and limited time.</p>
             </div>
-            <div class="phone-preview">
-              <div class="phone-top"></div>
-              <small>Work at Height Audit</small>
-              <div class="progress-line"><span></span></div>
-              <h4>Is the work area protected by a suitable exclusion zone?</h4>
-              <button>Very well managed</button>
-              <button>Well managed</button>
-              <button class="poor">Poorly managed</button>
-              <button class="next">Next question →</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad process-section" id="how-it-works">
-      <div class="container">
-        <div class="section-heading light reveal">
-          <div class="eyebrow light"><span></span>Simple workflow</div>
-          <h2>One platform. Four clear steps.</h2>
-          <p>Keep the process consistent from the first site check to final close-out.</p>
-        </div>
-        <div class="process-grid">
-          <article class="process-card reveal"><span>01</span><h3>Inspect</h3><p>Select an audit and work through clear, task-specific questions.</p></article>
-          <article class="process-card reveal"><span>02</span><h3>Record</h3><p>Add notes, voice input, photos and signatures while still on site.</p></article>
-          <article class="process-card reveal"><span>03</span><h3>Assign</h3><p>Create actions with an owner and deadline whenever improvement is required.</p></article>
-          <article class="process-card reveal"><span>04</span><h3>Report</h3><p>Generate the final PDF and track every action through verified close-out.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad benefits-section">
-      <div class="container benefits-grid">
-        <div class="benefits-copy reveal">
-          <div class="eyebrow"><span></span>Why Barricora</div>
-          <h2>Less administration. Better visibility. Safer work.</h2>
-          <p>Give supervisors and HSE teams a shared system without adding another complicated process to the site.</p>
-          <ul class="benefit-list">
-            <li><span>✓</span><div><strong>Save time after every audit</strong><small>Stop rebuilding reports and copying photos into documents.</small></div></li>
-            <li><span>✓</span><div><strong>Create clear accountability</strong><small>Every action has an owner, due date and close-out record.</small></div></li>
-            <li><span>✓</span><div><strong>Standardise quality across projects</strong><small>Use the same questions, ratings and reporting structure everywhere.</small></div></li>
-            <li><span>✓</span><div><strong>Show clients what is under control</strong><small>Professional evidence makes progress easy to demonstrate.</small></div></li>
-          </ul>
-        </div>
-        <div class="report-preview reveal">
-          <div class="paper-back"></div>
-          <div class="paper">
-            <div class="paper-head"><div class="paper-logo"><span>B</span>Barricora</div><small>SAFETY AUDIT REPORT</small></div>
-            <div class="paper-title"><div><small>Audit type</small><strong>Work at Height</strong></div><b>98%</b></div>
-            <div class="paper-meta"><span><small>Project</small>GVX25</span><span><small>Date</small>14 July 2026</span><span><small>Auditor</small>Mike K.</span></div>
-            <div class="paper-section"><strong>1. Exclusion zone and access control</strong><span class="paper-rating">Very well managed</span></div>
-            <div class="paper-photos"><i></i><i></i><i></i></div>
-            <div class="paper-lines"><i></i><i></i><i></i></div>
-            <div class="paper-section"><strong>2. Fall protection equipment</strong><span class="paper-rating">Well managed</span></div>
-            <div class="paper-action"><b>Corrective action</b><span>Replace damaged barrier signage</span><small>Owner: Site supervisor · Due: 16 Jul</small></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad pricing-section" id="pricing">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow"><span></span>Simple pricing</div>
-          <h2>Start small and scale across projects.</h2>
-          <p>Provisional launch pricing — we can refine the limits and amounts before publishing.</p>
-          <div class="billing-toggle" role="group" aria-label="Billing frequency">
-            <button class="active" data-billing="monthly">Monthly</button>
-            <button data-billing="annual">Annual <span>Save 15%</span></button>
+    <section class="audit-flow" id="workflow">
+      <div class="flow-wrap">
+        <div class="flow-title">
+          <p>One audit. One connected record.</p>
+          <h2>The full Barricora audit flow</h2>
+        </div>
+        <div class="flow-line">
+          <article><span>01</span><h3>Select the audit</h3><p>Choose the real activity: Work at Height, MEWP, Lifting, Plant, Hot Work and more.</p></article>
+          <article><span>02</span><h3>Confirm the basics</h3><p>Review SPA/RAMS, permits, PPE, rescue arrangements and spotter requirements.</p></article>
+          <article><span>03</span><h3>Score each question</h3><p>Use Very well managed, Well managed, Poorly managed, Very poorly managed or N/A.</p></article>
+          <article><span>04</span><h3>Add the evidence</h3><p>Attach multiple photos, notes and voice input directly to the relevant question.</p></article>
+          <article><span>05</span><h3>Close the loop</h3><p>Poor ratings require an owner and due date. Verify close-out with evidence and finish the PDF report.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-section">
+      <div class="section-wrap mobile-wrap">
+        <div class="phone-shell" aria-label="Barricora mobile audit question preview">
+          <div class="phone-status"><span>9:41</span><b>●●●</b></div>
+          <div class="phone-appbar"><button type="button">‹</button><div><small>Focused Audit</small><strong>Work at Height</strong></div><button type="button">⋮</button></div>
+          <div class="progress-meta"><span>Question 4 of 12</span><b>33%</b></div>
+          <div class="progress"><i></i></div>
+          <div class="question-card">
+            <small>Task Execution</small>
+            <h3>Is the work area protected by a suitable exclusion zone?</h3>
+            <div class="rating-list">
+              <button class="selected" type="button"><i></i>Very well managed</button>
+              <button type="button"><i></i>Well managed</button>
+              <button type="button"><i></i>Poorly managed</button>
+              <button type="button"><i></i>Very poorly managed</button>
+              <button type="button"><i></i>N/A</button>
+            </div>
+            <div class="evidence-tools"><button type="button">▣ Add photos</button><button type="button">● Voice note</button></div>
+          </div>
+          <div class="phone-nav"><button type="button">Back</button><button type="button">Next question</button></div>
+        </div>
+
+        <div class="mobile-copy">
+          <p class="overline light"><span></span> Made for the workface</p>
+          <h2>Use it beside the task.<br>Not later at the desk.</h2>
+          <p>The audit moves one question at a time, so it stays usable on a phone. Photos, comments, speech-to-text and signatures are captured while the evidence is still in front of you.</p>
+          <div class="mobile-features">
+            <div><b>Save &amp; Exit</b><span>Leave safely and resume the same audit later.</span></div>
+            <div><b>Required scoring</b><span>Every question must be completed or marked N/A.</span></div>
+            <div><b>Action enforcement</b><span>Poor ratings cannot be ignored; an action is required.</span></div>
+            <div><b>Read-only records</b><span>Finished audits open directly as completed reports.</span></div>
           </div>
         </div>
-
-        <div class="pricing-grid">
-          <article class="price-card reveal">
-            <div><span class="plan-name">Starter</span><p>For a small contractor or single site team.</p></div>
-            <div class="price"><strong data-monthly="299" data-annual="254">299</strong><span>SEK / month</span></div>
-            <ul><li>Up to 5 users</li><li>Focused safety audits</li><li>Findings and actions</li><li>PDF reports</li><li>1 active project</li></ul>
-            <a class="btn btn-secondary btn-full" href="#contact">Start with Starter</a>
-          </article>
-
-          <article class="price-card featured reveal">
-            <div class="popular">Most popular</div>
-            <div><span class="plan-name">Professional</span><p>For active HSE teams managing multiple workstreams.</p></div>
-            <div class="price"><strong data-monthly="699" data-annual="594">699</strong><span>SEK / month</span></div>
-            <ul><li>Up to 20 users</li><li>Everything in Starter</li><li>Unlimited active projects</li><li>Advanced dashboard</li><li>Company branding</li><li>Priority support</li></ul>
-            <a class="btn btn-primary btn-full" href="#contact">Request a demo</a>
-          </article>
-
-          <article class="price-card reveal">
-            <div><span class="plan-name">Business</span><p>For larger contractors and multi-project organisations.</p></div>
-            <div class="price custom"><strong>Custom</strong><span>Built around your team</span></div>
-            <ul><li>Unlimited users options</li><li>Everything in Professional</li><li>Multiple company workspaces</li><li>Custom audit libraries</li><li>Onboarding and training</li><li>Dedicated support</li></ul>
-            <a class="btn btn-secondary btn-full" href="#contact">Contact sales</a>
-          </article>
-        </div>
-        <p class="pricing-note">All prices exclude VAT. Plan names, limits and prices are placeholders until commercially confirmed.</p>
       </div>
     </section>
 
-    <section class="section-pad faq-section" id="faq">
-      <div class="container faq-grid">
-        <div class="section-heading left reveal">
-          <div class="eyebrow"><span></span>Questions</div>
-          <h2>Frequently asked questions.</h2>
-          <p>Everything teams usually need to know before trying Barricora.</p>
+    <section class="site-records">
+      <div class="section-wrap">
+        <div class="section-intro compact">
+          <p class="overline"><span></span> More than audits</p>
+          <h2>The site records already connected to Barricora</h2>
         </div>
-        <div class="accordion reveal">
-          <details open><summary>Does Barricora work on phones and tablets?<span>+</span></summary><p>Yes. Barricora is designed as a mobile-first web application and also works on desktop computers.</p></details>
-          <details><summary>Can we use our own audit questions?<span>+</span></summary><p>Business plans can include custom audit libraries. Standard plans include Barricora's focused construction safety audit categories.</p></details>
-          <details><summary>Can actions be closed with photo evidence?<span>+</span></summary><p>Yes. Owners can update corrective actions, add close-out notes and attach evidence before an action is marked complete.</p></details>
-          <details><summary>Can reports include our company logo?<span>+</span></summary><p>Company branding is planned for Professional and Business plans, including logos on generated reports.</p></details>
-          <details><summary>Do users need to install an app?<span>+</span></summary><p>No installation is required. Users open Barricora securely in their browser and can save it to their phone's home screen.</p></details>
+        <div class="records-grid">
+          <article><span>01</span><h3>Findings</h3><p>Raise a finding with description, photos, owner and due date. Track Open, In Progress and Closed status.</p></article>
+          <article><span>02</span><h3>Daily Checklist</h3><p>Complete the simple daily PPE, harness and SPA checks with project and date information.</p></article>
+          <article><span>03</span><h3>Toolbox Talks</h3><p>Record toolbox talks and keep the dashboard count connected to the project workspace.</p></article>
+          <article><span>04</span><h3>Workers</h3><p>Maintain the worker list used across the project administration tools.</p></article>
+          <article><span>05</span><h3>PPE</h3><p>Manage issued PPE and stock records in the same app instead of another spreadsheet.</p></article>
+          <article><span>06</span><h3>RAMS</h3><p>Keep RAMS records accessible from the same left-hand navigation.</p></article>
+          <article><span>07</span><h3>App Log</h3><p>Search and filter activity covering users, audits, findings, daily checks, toolbox, workers, PPE, RAMS, settings and photos.</p></article>
+          <article><span>08</span><h3>Support Access</h3><p>Company administrators control support access and account administration from the app.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="cta-section" id="contact">
-      <div class="container cta-card reveal">
+    <section class="plans-section" id="plans">
+      <div class="section-wrap plans-wrap">
+        <div class="plans-copy">
+          <p class="overline light"><span></span> Subscription plans</p>
+          <h2>We will publish the commercial plans when the limits are decided.</h2>
+          <p>No invented user limits, fake features or made-up prices are shown here. The website is ready for Starter, Professional and Business pricing once the actual offer is confirmed.</p>
+        </div>
+        <div class="plans-board">
+          <div class="plan-row heading"><span>PLAN</span><span>PRICE</span><span>STATUS</span></div>
+          <div class="plan-row"><strong>Starter</strong><span>To be confirmed</span><b>Draft plan</b></div>
+          <div class="plan-row featured"><strong>Professional</strong><span>To be confirmed</span><b>Draft plan</b></div>
+          <div class="plan-row"><strong>Business</strong><span>Custom offer</span><b>Draft plan</b></div>
+          <a href="#contact">Discuss early access →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-wrap">
         <div>
-          <div class="eyebrow light"><span></span>See it on your workflow</div>
-          <h2>Ready to make site audits simpler?</h2>
-          <p>Tell us about your team and we’ll show how Barricora can fit your project.</p>
+          <img src="assets/barricora-logo.png" alt="Barricora" />
+          <h2>See Barricora using a real construction workflow.</h2>
+          <p>Request a demo and show us how your team handles audits, findings and close-out today.</p>
         </div>
-        <form class="demo-form" id="demo-form">
-          <div class="form-row"><label><span>Name</span><input type="text" name="name" placeholder="Your name" required /></label><label><span>Work email</span><input type="email" name="email" placeholder="name@company.com" required /></label></div>
-          <label><span>Company</span><input type="text" name="company" placeholder="Company name" /></label>
-          <label><span>What would you like to improve?</span><textarea name="message" rows="3" placeholder="Audits, actions, reports, project visibility..."></textarea></label>
-          <button class="btn btn-light btn-full" type="submit">Request a demo</button>
-          <small class="form-message" aria-live="polite"></small>
+        <form id="demo-form">
+          <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
+          <label><span>Work email</span><input type="email" name="email" autocomplete="email" required /></label>
+          <label><span>Company / project</span><input type="text" name="company" autocomplete="organization" /></label>
+          <label><span>What would you like to improve?</span><textarea name="message" rows="4"></textarea></label>
+          <button type="submit">Prepare demo email</button>
+          <small id="form-message" aria-live="polite"></small>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="brand brand-light" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 3 34 9v10c0 9.2-5.7 14.9-14 18-8.3-3.1-14-8.8-14-18V9l14-6Z"/><path d="M14 13h8.5a5.5 5.5 0 0 1 0 11H14V13Zm0 11h9.8a5 5 0 0 1 0 10H14V24Z"/></svg></span><span>Barricora</span></a>
-        <p>Practical safety management software built for construction teams.</p>
-      </div>
-      <div><strong>Product</strong><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="https://app.barricora.com/">Log in</a></div>
-      <div><strong>Company</strong><a href="#contact">Contact</a><a href="#">Privacy policy</a><a href="#">Terms of service</a></div>
-      <div><strong>Get started</strong><p>Request a product demo or discuss a pilot project.</p><a class="footer-cta" href="#contact">Talk to us →</a></div>
+  <footer>
+    <div class="footer-inner">
+      <img src="assets/barricora-logo.png" alt="Barricora" />
+      <p>Construction safety audits, evidence, actions and site records.</p>
+      <nav><a href="#product">Product</a><a href="#modules">Modules</a><a href="#plans">Plans</a><a href="https://app.barricora.com/">Open app</a></nav>
+      <small>© <span id="year"></span> Barricora</small>
     </div>
-    <div class="container footer-bottom"><span>© <span id="year"></span> Barricora. All rights reserved.</span><span>Built for safer work.</span></div>
   </footer>
 
   <script src="script.js"></script>
